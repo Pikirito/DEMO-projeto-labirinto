@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    user-select: none;
+    overflow: hidden;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+#container-resultado {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+    padding: 0.5rem 0 1.5rem 0;
+    margin: 1rem 0 1rem 0;
+}
+
+#labirinto {
+    border: 5px solid black;
+}
+
+.linha {
+    display: flex;
+}
+
+.celula {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-size: cover;
+    background-color: rgb(104, 101, 101);
+}
+
+.parede {
+    /* background-color: #333; */
+    background-image: url("./assets/brick-wall.png");
+}
+
+.jogador {
+    /* background-color: black; */
+    background-image: url('./assets/hedgehog.png');
+}
+
+.chegada {
+    /* background-color: rgb(232, 104, 104); */
+    background-image: url("./assets/potato.png");
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#btn-resetar-jogo {
+    height: 2.5rem;
+    width: 30%;
+    background: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-shadow: 4px 4px 10px 2px rgb(122, 121, 121);
+    transition: 500ms;
+    cursor: pointer;
+}
+
+#btn-resetar-jogo:hover {
+    height: 2.8rem;
+    width: 35%;
+    font-size: 1.2rem;
+}
+
+#resultado {
+    font-weight: bold;
+}
